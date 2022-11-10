@@ -1,47 +1,37 @@
 // TODO Add a couple lines about each project
 const data = [
   {
-    title: 'Nearest Dollar',
-    subtitle: '2015 BVP Hackathon',
-    image: '/images/projects/nearestdollar.jpg',
-    date: '2015-11-20',
+    title: 'Peer 2 Peer File Transfer',
+    subtitle: 'Tranfereing data freely between Peers accross the internet without third parties',
+    link: 'https://github.com/Mo-Fatah/p2p-ft',
+    image: '/images/projects/p2p.jpg',
+    date: '2022-10-11',
     desc:
-      'Built for a social impact hackathon. '
-      + 'NearestDollar connected to your bank accounts, credit cards, '
-      + 'or debit cards and rounded up your purchases to donate the balance to '
-      + 'the charity of your choice.',
+          'A Rust command line tool to send any file between any two computers on the internet without the need of them to have public static IP addresses, '
+          + 'and without the need of any platform that either limits the file size or imposes fees on its users. '
+        + 'The project is mainly for devices that are behind NAT networks like most of todays computers. But of courese it can be used between publicly accessable computers.',
   },
   {
-    title: 'Harvest',
-    subtitle: 'Won 3rd. place in 2015 Techcrunch Disrupt SF Hackathon',
-    link: 'https://devpost.com/software/harvest',
-    image: '/images/projects/harvest.jpg',
-    date: '2015-09-20',
+    title: 'Guide Me',
+    subtitle: 'Services Review App',
+    link: 'https://github.com/Mo-Fatah/GuideMe',
+    image: '/images/projects/rest.jpeg',
+    date: '2021-12-10',
     desc:
-      'Won ~ $7000 in prizes for an advanced, low cost monitoring solution '
-      + 'for crops. Harvest was designed to catch irrigation leaks, overwatering, '
-      + 'and nutrient deficiencies at an affordable price for the developing world.',
+        'Restaurant reviews CRUD Web Application using Express.js, REST API, MongoDB(mongoose), React.js, React-Router, MaterialUI'
+        + 'and User Authentication that help users to find best restaurants in a specific location sorted by other’s ratings with reviews for each '
+        + 'restaurant. Using Postman for API testing, Jest for Backend testing and Cypress for End-to-End testing (still working on Cypress).',
   },
   {
-    title: 'Space Potato',
-    subtitle: 'A kickstarter funded potato powered weather balloon.',
-    link: 'http://www.spacepotato.org',
-    image: '/images/projects/spacepotato.jpg',
-    date: '2015-06-28',
+    title: 'TCP in Rust',
+    subtitle: 'TCP implementation in Rust',
+    link: 'https://github.com/Mo-Fatah/tcp-rust',
+    image: '/images/projects/tcp.png',
+    date: '2022-3-9',
     desc:
-      'Launched a potato battery powered weather balloon with two cameras '
-      + 'and gps transponder. Resulting photos were published in a coffee table book. '
-      + 'You can email me for a copy.',
-  },
-  {
-    title: 'Cat Detector',
-    subtitle: 'A convolutional neural network to classify cats! (and dogs)',
-    image: '/images/projects/catdetector.jpg',
-    date: '2015-05-15',
-    desc:
-      'Trained a convolutional neural network to classify between ~ 80 cats breeds. '
-      + 'Over 60,000 cats were classified before server bills made the project too expensive '
-      + 'to continue hosting.',
+        'A TCP implementation in Rust in compliance with RFC:793 using a tun-tap virtual network interface. The initial connection cycle is '
+        + 'done starting from SYN/ACK handshake until tearing down the connection with FIN. This is a very ambitious and challenging project '
+        + ' for me and it is still under development.',
   },
 ];
 
