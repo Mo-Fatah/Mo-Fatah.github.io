@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 const SkillBar = ({ data, categories }) => {
   const { category, competency, title } = data;
 
-  // TODO: Consider averaging colors
   const titleStyle = {
     background: categories
       .filter((cat) => category.includes(cat.name))

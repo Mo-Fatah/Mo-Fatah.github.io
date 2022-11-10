@@ -25,8 +25,13 @@ const sections = [
 const Resume = () => (
   <Main
     title="Resume"
-    description="Michael D'Angelo's Resume. Arthena, Matroid, YC, Skeptical Investments, Stanford ICME, Planet Labs, and Facebook."
+    description="Mohamed Abdelfatah's Resume"
   >
+    <p>
+      <b>You can get the PDF version
+        <a href="https://drive.google.com/file/d/1dZrWR3Bpux-3U7qHi1idFDkfBcCeYmIu/view?usp=sharing"> here</a>
+      </b>
+    </p>
     <article className="post" id="resume">
       <header>
         <div className="title">

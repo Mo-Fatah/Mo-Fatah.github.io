@@ -11,6 +11,10 @@ const Job = ({ data }) => (
       {data.points.map((point) => (
         <li key={point}>{point}</li>
       ))}
+      <li>Technologies I used: {data.technologies.map((tech) => (
+        <b>{tech}</b>
+      ))}
+      </li>
     </ul>
   </article>
 );
@@ -22,6 +26,7 @@ Job.propTypes = {
     position: PropTypes.string.isRequired,
     daterange: PropTypes.string.isRequired,
     points: PropTypes.arrayOf(PropTypes.string).isRequired,
+    technologies: PropTypes.string.isRequired,
   }).isRequired,
 };
 

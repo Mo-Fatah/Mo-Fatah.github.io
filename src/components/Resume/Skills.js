@@ -73,8 +73,8 @@ class Skills extends Component {
         <div className="link-to" id="skills" />
         <div className="title">
           <h3>Skills</h3>
-          <p>Note: I think these sections are silly, but everyone seems to have one.
-            Here is a *mostly* honest overview of my skills.
+          <p> 5 = I used it for a while and have a deeper knowledge in it<br />
+            1 = Just scratched the surface, either in a Course or for a specific use case
           </p>
         </div>
         <div className="skill-button-container">
