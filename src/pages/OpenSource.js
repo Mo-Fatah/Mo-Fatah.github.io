@@ -1,18 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react';
-// eslint-disable-next-line
-import { Octokit, App } from 'octokit';
 import { Link } from 'react-router-dom';
 import Main from '../layouts/Main';
-
-const getGithubData = async () => {
-  const octokit = new Octokit();
-
-  const resp = await octokit.request('GET /search/issues?q=author:Mo-Fatah+-org:Mo-Fatah', {
-    per_page: 100,
-  });
-
-  return resp.data.items;
-};
+import getGithubData from '../data/open-source';
+import CategoryButton from '../components/Resume/Skills/CategoryButton';
 
 // eslint-disable-next-line
 const BlinkingComponent = ({ highlighting, phrase }) => (
@@ -20,20 +10,31 @@ const BlinkingComponent = ({ highlighting, phrase }) => (
 );
 
 const OpenSource = () => {
-  const [data, setResponseData] = useState([]);
+  const [data, setResponseData] = useState(null);
   const [highlight, setHighLight] = useState(false);
+  const [dataToView, setDataToView] = useState(data);
 
   setTimeout(() => {
     setHighLight(!highlight);
-  }, 1500);
+  }, 1000);
+
   const fetchData = useCallback(async () => {
     const res = await getGithubData();
     setResponseData(res);
+    setDataToView(res);
   }, []);
 
   useEffect(() => {
     fetchData();
   }, [fetchData]);
+
+  const handleClick = (label) => {
+    if (label === 'all') {
+      setDataToView(data);
+    } else {
+      setDataToView(data.filter((item) => item.type === label));
+    }
+  };
 
   return (
     <Main
@@ -44,12 +45,23 @@ const OpenSource = () => {
         <header>
           <div className="title">
             <h2 data-testid="heading"><Link to="/open-source">Open Source Contributions</Link></h2>
-            <BlinkingComponent highlighting={highlight} phrase=" ● A live track of my Open Source Contributions" />
+            <BlinkingComponent highlighting={highlight} phrase=" ● A live track of my Open Source Contributions Through Github API" />
           </div>
         </header>
+        <div className="skill-button-container">
+          <CategoryButton handleClick={() => handleClick('all')} active={[]} label="All" />
+          <CategoryButton handleClick={() => handleClick('pr')} active={[]} label="Pull Requests" />
+          <CategoryButton handleClick={() => handleClick('issue')} active={[]} label="issues" />
+        </div>
         <ul>
-          {data.filter((item) => !item.pull_request)
-            .map((item) => (<li>{item.html_url}</li>))}
+          {dataToView ? dataToView.map((item) => (
+            <li>
+              <a href={item.repo_url}><b>{item.repo}</b></a> :
+              <a href={item.url}> {item.title} </a>
+            </li>
+          ))
+            : <p><b>loading ...</b></p>}
+
         </ul>
       </article>
     </Main>

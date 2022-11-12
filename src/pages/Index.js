@@ -12,7 +12,7 @@ const Index = () => (
         or you can check out my {' '}
         <Link to="/resume"><b>resume</b></Link>, {' '}
         <Link to="/projects"><b>projects</b></Link>, {' '}
-        view <Link to="/stats"><b>site statistics</b></Link>, {' '}
+        <Link to="/open-source"><b>open-source contributions</b></Link>, {' '}
         or <Link to="/contact"><b>contact</b></Link> me.
       </p>
     </article>

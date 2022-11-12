@@ -21,10 +21,6 @@ const routes = [
     path: '/open-source',
   },
   {
-    label: 'Stats',
-    path: '/stats',
-  },
-  {
     label: 'Contact',
     path: '/contact',
   },
