@@ -10,7 +10,7 @@ const skills = [
   {
     title: 'Postman',
     competency: 3,
-    category: ['tools'],
+    category: ['Tools'],
   },
   {
     title: 'Rust',
@@ -25,7 +25,7 @@ const skills = [
   {
     title: 'Docker',
     competency: 4,
-    category: ['Tools'],
+    category: ['Tools', 'DevOps'],
   },
   {
     title: 'Github Actions',

@@ -19,8 +19,8 @@ const data = [
     date: '2021-12-10',
     desc:
         'Restaurant reviews CRUD Web Application using Express.js, REST API, MongoDB(mongoose), React.js, React-Router, MaterialUI'
-        + 'and User Authentication that help users to find best restaurants in a specific location sorted by other’s ratings with reviews for each '
-        + 'restaurant. Using Postman for API testing, Jest for Backend testing and Cypress for End-to-End testing (still working on Cypress).',
+        + ' and User Authentication that help users to find best restaurants in a specific location sorted by other’s ratings with reviews for each '
+        + 'restaurant. Using Postman for API testing, Jest for Backend testing.',
   },
   {
     title: 'TCP in Rust',

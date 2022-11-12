@@ -2,7 +2,7 @@ const degrees = [
   {
     school: 'Alexandria University',
     degree: 'B.S. Production and Industrial Engineering',
-    link: 'alexu.edu.eg',
+    link: 'https://alexu.edu.eg/index.php/en/',
     year: 2022,
   },
   {
