@@ -13,6 +13,11 @@ const skills = [
     category: ['Tools'],
   },
   {
+    title: 'Go',
+    competency: 5,
+    category: ['System Programming', 'Languages'],
+  },
+  {
     title: 'Rust',
     competency: 5,
     category: ['System Programming', 'Languages'],
@@ -21,6 +26,11 @@ const skills = [
     title: 'C',
     competency: 1,
     category: ['System Programming', 'Languages'],
+  },
+  {
+    title: 'Kubernetes',
+    competency: 2,
+    category: ['Tools', 'DevOps'],
   },
   {
     title: 'Docker',
@@ -61,6 +71,11 @@ const skills = [
     title: 'Heroku',
     competency: 3,
     category: ['Web Development', 'Tools', 'Cloud'],
+  },
+  {
+    title: 'PostgreSQL',
+    competency: 3,
+    category: ['Databases'],
   },
   {
     title: 'MongoDB',

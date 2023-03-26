@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ContactIcons from '../Contact/ContactIcons';
@@ -18,9 +19,11 @@ const SideBar = () => (
 
     <section className="blurb">
       <h2>About</h2>
-      <p>Hi, I&apos;m Mohamed. I love building things.
-        I have a great passion towards Backend Systems, Infrastructure and Networking.
-        I have a decent experience in Rust, Java, MERN stack and other tech stacks.
+      <p>Hi, I&apos;m Mohamed.
+        I am a self-motivated software engineer with experience in developing and contributing to open source projects. 
+        My passion lies in exploring distributed systems using modern technologies such as Rust, Go. I am passionate about solving complex problems and always eager to learn new things. 
+        I thrive in collaborative environments where I can work with diverse teams to create innovative solutions. 
+        In my free time, I enjoy contributing to open source projects and learning new programming languages and technologies.
         Feel free to explore my website!
       </p>
       <ul className="actions">

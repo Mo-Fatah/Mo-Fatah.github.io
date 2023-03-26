@@ -1,7 +1,7 @@
 
 # Intro
 
-I am a self-taught Software Engineer. I am an Outreachy Alumni with the [Confidential Computing Consortium](https://confidentialcomputing.io/). I am flexible to dive into any tech stack, but I usually enjoy learning more about Backend Systems and Infrastructure. I also have a great interest in some new technologies like Rust, WebAssembly and WASI.
+I am a self-motivated software engineer with experience in developing and contributing to open source projects. My passion lies in building distributed systems using modern technologies such as Rust, Go. I am passionate about solving complex problems and always eager to learn new things. I thrive in collaborative environments where I can work with diverse teams to create innovative solutions. In my free time, I enjoy contributing to open source projects and learning new programming languages and technologies.
 
 # Some history
 
