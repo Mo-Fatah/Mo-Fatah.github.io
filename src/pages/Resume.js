@@ -29,7 +29,7 @@ const Resume = () => (
   >
     <p>
       <b>You can get the PDF version
-        <a href="https://drive.google.com/file/d/1t3t17H1jTrse61BeYDwffSxi8jwQLQXw/view?usp=sharing"> here</a>
+        <a href="https://drive.google.com/file/d/1nm2n8wf6p8uzxT2SECxJkVs3CTcsQRNv/view?usp=sharing"> here</a>
       </b>
     </p>
     <article className="post" id="resume">

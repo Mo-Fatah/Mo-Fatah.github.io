@@ -1,6 +1,17 @@
 // TODO Add a couple lines about each project
 const data = [
   {
+    title: 'Mizan, A Load Balancer',
+    subtitle: '',
+    link: 'https://github.com/Mo-Fatah/mizan/',
+    image: '/images/projects/mizan.jpg',
+    date: '2023-5-1',
+    desc:
+          'Experimental Load Balancer written in Golang to distribute the load between multiple services'
+            + ' with the support of multiple algorithms like Round Robin, Least Connections and Weighted Round Robin.'
+         + 'It is a Layer 7 Load Balancer that can be used to distribute the load between multiple services based on the request path.',
+  },
+  {
     title: 'Peer 2 Peer File Transfer',
     subtitle: 'Tranfereing data freely between Peers accross the internet without third parties',
     link: 'https://github.com/Mo-Fatah/p2p-ft',
